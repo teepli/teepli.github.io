@@ -1,0 +1,91 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: forestgreen;
+}
+
+/*Make navbar texts white*/
+.nav.navbar-nav li a {
+    color: white;
+}
+
+/*Navbar hover color*/
+li:hover {
+    background-color: darkgreen;
+}
+
+/*Navbar active page background color*/
+.omavari {
+    background-color: darkgreen;
+}
+
+/*logo settings*/
+.navbar-brand {
+    padding-bottom: 0px !important;
+    padding-top: 3px !important;
+}
+
+/*search form button*/
+#btn{
+    color:white;
+    background-color: forestgreen;
+}
+
+/*search form font not bold*/
+.lomake{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*search form borders*/
+.haku{
+    border: forestgreen 1px solid;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 450px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    margin-top: 15px;
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+/*sidenav well padding*/
+.well{
+    padding: 0px;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: forestgreen;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .row.content {
+        height: auto;
+    }
+}
+.dropdown-menu{
+    background-color: forestgreen;
+    color:forestgreen;
+}
+
+

@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <title>Etusivu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--override some bootstrap styles-->
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="../frontpage/custom.css">
+    <link rel="stylesheet" href="../../static/style.css">
+
+
+</head>
+<body>
+
+<!--navbar starts-->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html"><img src="../../logovalk.png" height="51" width="200"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li ><a href="../../index.html">Etusivu</a></li>
+                <li><a href="../departures/index.html">Asemahaku</a></li>
+                <li><a href="../map/map.html">Junat kartalla</a></li>
+                <li  class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Ekstrat<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../frontpage/juna.html">Animaatio</a></li>
+                        <li><a href="../delaycauses/delaycauses.html">Kootut selitykset</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="omavari" class="active"><a href="../Tiina-Liisa/Login.html"><span class="glyphicon glyphicon-log-in"></span> Kirjaudu
+                    sisään</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--navbar ends-->
+
+<!-- main container starts-->
+<div class="container-fluid text-center">
+    <div class="row content">
+
+        <!--middle container starts-->
+        <div class="col-sm-10 text-left">
+            <form>
+                <div class="imgcontainer">
+
+                </div>
+
+                <div class="container">
+                    <h2>Kirjautuminen</h2>
+                    <label for="sähköposti"><b>Käyttäjätunnus</b></label>
+                    <input id="sähköposti" type="text" placeholder="Kirjoita käyttäjätunnus" name="uname" required>
+
+                    <label for="salasana"><b>Salasana</b></label>
+                    <input id="salasana" type="password" placeholder="Kirjoita salasana" name="psw" required>
+
+                    <button type="button" onclick="avaaSivu()">Kirjaudu</button>
+
+
+                    <label>
+                        <input type="checkbox" name="Muista minut"> Muista minut
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <input type="button" value="Rekisteröidy" onclick="rekisteröidy()">
+                    <button type="button" onclick="peruuta()" class="cancelbtn">Peruuta</button>
+                    <span class="psw">Unohditko <a onclick="hassua()" href="#">salasanan?</a></span>
+                </div>
+            </form>
+
+
+            <!--break-->
+            <hr/>
+
+
+        </div>
+        <!--middle container ends-->
+
+
+        <!--sidenav adds begin-->
+        <div class="col-sm-2 sidenav">
+            <div class="well">
+                <img src="../../alogo.png" height="173" width="520" class="img-responsive"/>
+            </div>
+            <div class="well">
+                <img src="../../amainos.png" height="581" width="450" class="img-responsive"/></div>
+        </div>
+        <!--sidenav ends-->
+
+    </div>
+</div>
+<!--main container ends -->
+
+<!-- footer -->
+<footer class="container-fluid text-center">
+    <p>&reg; Pulli, Sorjonen, Välimaa, Wonnemann</p>
+</footer>
+<!--footer ends-->
+
+<!--script -->
+<script src="Login.js"></script>
+</body>
+</html>

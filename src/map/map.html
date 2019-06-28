@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Etusivu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../static/style.css">
+    <link rel="stylesheet" href="../frontpage/custom.css">
+    <link rel="stylesheet" href="map.css">
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html"><img src="../../logovalk.png" height="51" width="200"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="../../index.html">Etusivu</a></li>
+                <li><a href="../departures/index.html">Asemahaku</a></li>
+                <li class="omavari" class="active"><a href="#">Junat kartalla</a></li>
+                <li  class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Ekstrat<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../frontpage/juna.html">Animaatio</a></li>
+                        <li><a href="../delaycauses/delaycauses.html">Kootut selitykset</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../Tiina-Liisa/Login.html"><span class="glyphicon glyphicon-log-in"></span> Kirjaudu sisään</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="haku" id="map"></div>
+
+
+<footer class="container-fluid text-center">
+    <p>&reg; Pulli, Sorjonen, Välimaa, Wonnemann</p>
+</footer>
+<script src="map.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl6UFoQ7MyekJzAxIeSj4ChrpWQVsIwM0&callback=getData">
+</script>
+</body>
+</html>
